@@ -1,0 +1,35 @@
+data:
+  type: fs
+  settings:
+    format: csv
+    sep: ","
+  schemaDDL : "name STRING, time STRING, value STRING"
+  path: ./data/dataset.csv
+metadata:
+  type: fs
+  settings:
+    format: csv
+    sep: ","
+    inferSchema: true
+    header: true
+    mode: DROPMALFORMED
+  path: ./data/metadata.csv
+mapping:
+  type: fs
+  settings:
+    format: csv
+    header: true
+    sep: ","
+    inferSchema: true
+  path: ./data/mapping.csv
+output:
+  type: fs
+  mode: overwrite
+  coalesce: true
+  settings:
+    format: csv
+    header: true
+    sep: ","
+    inferSchema: true
+  path: ./data/output
+

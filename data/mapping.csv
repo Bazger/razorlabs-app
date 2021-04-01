@@ -1,0 +1,6 @@
+machine_type,plc_name
+excavator,PLC303
+wheel trencher,PLC0120
+generator,Schindler,PLC0240
+front loader,CAT,PLC970
+scraper,PLC030
